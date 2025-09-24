@@ -1,0 +1,109 @@
+<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Belgium Project</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- HOME -->
+  <section id="home" class="page active">
+    <div class="bubbles"></div>
+    <h1>🇧🇪 Belgium Project</h1>
+    <h2>Made by Albu Ștefan</h2>
+    <button onclick="showPage('about')">Start ➡️</button>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="page">
+    <div class="bubbles"></div>
+    <h1>About Belgium</h1>
+    <p>A small but powerful country in Western Europe.<br>
+       Known for waffles, fries, chocolate, medieval towns,<br>
+       and as the headquarters of the European Union 🇪🇺.</p>
+    <button onclick="showPage('history')">Next ➡️</button>
+  </section>
+
+  <!-- HISTORY -->
+  <section id="history" class="page">
+    <div class="bubbles"></div>
+    <h1>History</h1>
+    <p>Belgium became independent in 1830.<br>
+       It is a constitutional monarchy with a king 👑.<br>
+       Today, King Philippe is the monarch.</p>
+    <button onclick="showPage('culture')">Next ➡️</button>
+  </section>
+
+  <!-- CULTURE -->
+  <section id="culture" class="page">
+    <div class="bubbles"></div>
+    <h1>Culture</h1>
+    <p>Belgium is famous for art (Magritte 🎨),<br>
+       comics (Tintin 📚), festivals and music 🎶.</p>
+    <button onclick="showPage('food')">Next ➡️</button>
+  </section>
+
+  <!-- FOOD -->
+  <section id="food" class="page">
+    <div class="bubbles"></div>
+    <h1>Food</h1>
+    <p>Belgian food is delicious:<br>
+       🧇 Waffles, 🍟 Fries, 🍫 Chocolate, 🍺 Beer.</p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/69/Belgian_Waffles.jpg" width="300">
+    <br>
+    <button onclick="showPage('map')">Next ➡️</button>
+  </section>
+
+  <!-- MAP -->
+  <section id="map" class="page">
+    <div class="bubbles"></div>
+    <h1>Interactive Map</h1>
+    <div class="container">
+      <div class="sidebar" id="sidebar"></div>
+      <div id="mapid"></div>
+    </div>
+    <button onclick="showPage('game')">Next ➡️</button>
+  </section>
+
+  <!-- GAME -->
+  <section id="game" class="page">
+    <div class="bubbles"></div>
+    <h1>🎮 Mini Game: Quiz Time!</h1>
+    <p id="question">Question will appear here</p>
+    <div id="answers"></div>
+    <p id="feedback"></p>
+    <button id="nextQuestion" style="display:none;">Next ➡️</button>
+    <br><br>
+    <button onclick="showPage('french')">Skip ➡️</button>
+  </section>
+
+  <!-- FRENCH -->
+  <section id="french" class="page">
+    <div class="bubbles"></div>
+    <h1>Learn Simple French</h1>
+    <ul>
+      <li>Hello = Bonjour</li>
+      <li>Goodbye = Au revoir</li>
+      <li>Thank you = Merci</li>
+      <li>Please = S’il vous plaît</li>
+      <li>Yes = Oui</li>
+      <li>No = Non</li>
+      <li>Excuse me = Excusez-moi</li>
+    </ul>
+    <button onclick="showPage('goodbye')">Finish 🎉</button>
+  </section>
+
+  <!-- GOODBYE -->
+  <section id="goodbye" class="page">
+    <div class="bubbles"></div>
+    <h1>Thank you! / Merci beaucoup! 👋</h1>
+    <p>Goodbye from Belgium 🇧🇪</p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/Grand_Place_Brussels_panorama.jpg" width="300">
+  </section>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
